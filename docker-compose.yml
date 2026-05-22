@@ -22,6 +22,8 @@ services:
     networks:
       test_net:
         ipv4_address: 10.10.10.12
+    ports:
+      - "8082:80"
     depends_on:
       - app
 
@@ -33,6 +35,8 @@ services:
     networks:
       test_net:
         ipv4_address: 10.10.10.13
+    ports:
+      - "8083:80"
     depends_on:
       - app
 
