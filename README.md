@@ -27,7 +27,8 @@ docker compose -p my-nginx-test up -d
 
 ```bash
 curl -s http://localhost:8081/ | grep X-Forwarded-For
-
+curl -s http://localhost:8082/ | grep X-Forwarded-For
+curl -s http://localhost:8083/ | grep X-Forwarded-For
 ```
 
 **Результат:**
